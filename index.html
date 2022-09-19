@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  
+</head>
+<body>
+  <script>
+   const div = document.createElement('div')
+   const divtxt = document.createElement('div')
+
+   const ul = document.createElement('ul')
+
+   const item_1 = document.createElement('li')
+   const item_2 = document.createElement('li')
+   const item_3 = document.createElement('li')
+
+   const link1 = document.createElement('a')
+   const link2 = document.createElement('a')
+   const link3 = document.createElement('a')
+
+   ul.append(item_1, item_2, item_3)
+   div.append(divtxt, ul)
+
+   item_1.append(link1)
+   item_2.append(link2)
+   item_3.append(link3)
+
+   divtxt.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed accumsan lacus, at porttitor felis. Ut volutpat hendrerit lacinia. Suspendisse accumsan ex id tellus posuere, id semper magna varius. '
+   div.style.boxSizing = 'border-box'
+   document.body.style.width = '100%'
+   div.style.margin = 'auto'
+   div.style.width = '30%'
+
+   divtxt.style.border = '2px solid red'
+   divtxt.style.borderRadius = '15px'
+   divtxt.style.padding = '8px'
+
+   ul.style.display = 'flex'
+    ul.style.justifyContent = 'space-around'
+    ul.style.listStyleType = "none";
+    ul.style.padding = '0px'
+    
+    
+
+    link1.setAttribute("href", 'https://github.com/intocode')
+    link1.textContent = 'intocode';
+    
+
+    link2.setAttribute('href', 'https://www.google.ru/')
+    link2.textContent = 'Gogle'
+
+    link3.setAttribute('href', 'https://www.instagram.com/')
+    link3.textContent = 'Instagram'
+
+   
+
+   document.body.prepend(div)
+
+  </script>
+</body>
+</html> 
